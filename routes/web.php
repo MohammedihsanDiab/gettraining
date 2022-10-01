@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\sitcontroller;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,8 +14,4 @@
 |mohammmmmmmmmmmmmmessdsdsdsdd
 
 */
-
-Route::get('/', function () {
-    return view('welcome');;
-});
-
+route::get('/' , [sitcontrollerr::class , 'home'])->name('homepage');
